@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: bisque;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 15px;
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <h2>File audio</h2>
+    <div class="grid">
+        <div class="grid-container">
+            <figcaption>audio 1</figcaption>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3">       
+            </audio>
+            <figcaption>audio 2</figcaption>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+            </audio>
+
+        </div>
+    </div>
+</body>
+
+</html>

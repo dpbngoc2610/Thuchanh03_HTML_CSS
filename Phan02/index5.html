@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        background-color: bisque;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        gap: 15px;
+        padding: 10px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .card {
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: left;
+        width: auto;
+        height: auto;
+    }
+    
+    .card>figcaption {
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    img:hover {
+        width: 210px;
+        height: 310px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h2>Portfolio</h2>
+    <div class="grid">
+        <div class="grid-container">
+            <div class="card">
+                <img src="https://picsum.photos/200/300" alt="">
+                <figcaption>Du an TTTM</figcaption>
+                <p>Du an phat trien trung tam thuong mai moi voi nguon dau tu tu Nhat Ban, thong bao so luoc ve cach thuc hoat dong cung voi loi nhuan du kien cua cac nha dau tu, huong phat trien va gioi thieu cac co dong lon.</p>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200/300" alt="">
+                <figcaption>Du an Mo rong</figcaption>
+                <p>Ke hoach mo rong duong di o cac khu dan cu dong duc, dua ra ban thiet ke mo rong va cac phuong an huy dong nguoi dan huong ung, dua ra so lieu thong ke ve cac khoan chi phi cung nhu la luc luong lao dong va ket qua co the dat duoc.</p>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200/300" alt="">
+                <figcaption>Du an Phan mem</figcaption>
+                <p>Du an phat trien phan mem dang ki hoc phan cho sinh vien o cac truong, giam thieu toi da giat lag va nang cap may chu, tang so luong truy cap trong cung thoi gian de han che crash server, tang toi da hieu nang cho sinh vien.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

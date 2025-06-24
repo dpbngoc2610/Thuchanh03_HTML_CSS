@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .introduction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: aqua;
+    }
+    
+    .introduction>* {
+        margin: 10px;
+    }
+    
+    @media screen and (max-width:600px) {
+        .introduction {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <div class="introduction">
+        <p>Doan Phuoc Bao Ngoc</p>
+        <p>26/10/2006</p>
+        <img src="https://picsum.photos/200" alt="">
+        <p>So thich : da bong, coi phim, choi game, di choi,...</p>
+        <p>Mo ta : huong noi it noi, co 1 chut luoi bieng</p>
+    </div>
+</body>
+
+</html>

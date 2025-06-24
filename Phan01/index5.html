@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .flex {
+        background-color: blanchedalmond;
+        width: 100%;
+    }
+    
+    .flex-container {
+        display: flex;
+        white-space: nowrap;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex-container>a {
+        margin: 0px 20px;
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+    
+    .flex-container>a:hover {
+        cursor: pointer;
+        color: aqua;
+        background-color: blue;
+        transition-duration: 1s;
+    }
+    
+    .flex-container>a:active {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <h2>Link</h2>
+    <div class="flex">
+        <div class="flex-container">
+            <a href="index1.html" target="_self">link to index.html with _self</a>
+            <a href="index2.html" target="_blank">link to index2.html with _blank</a>
+        </div>
+    </div>
+</body>
+
+</html>

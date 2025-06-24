@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        background-color: antiquewhite;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        margin: 10px 0;
+        background-color: aqua;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    iframe {
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <h3>Video Youtube</h3>
+    <div class="flex">
+        <div class="flex-container">
+            <h5>clip youtube 1</h5>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flex-container">
+            <h5>clip youtube 2</h5>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/n4uvOKtJEAY" frameborder="0" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

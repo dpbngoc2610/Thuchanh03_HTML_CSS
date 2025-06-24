@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flex-container-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <h2>Some picture</h2>
+    <div class="flex-container">
+        <img src="https://picsum.photos/200" alt="">
+        <figcaption>Lorem ipsum</figcaption>
+    </div>
+    <div class="flex-container-reverse">
+        <img src="https://picsum.photos/200" alt="">
+        <figcaption>Lorem ipsum picture</figcaption>
+    </div>
+
+</body>
+
+</html>

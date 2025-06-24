@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .flex {
+        display: flex;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    .form-container {
+        height: auto;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border-radius: 12px;
+        border: 1px solid gray;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 5px 10px;
+    }
+    
+    .form>input {
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form>label {
+        font-weight: bold;
+    }
+    
+    .sex {
+        margin: 5px 0;
+    }
+    
+    .sex>* {
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <form action="index4.html">
+        <div class="flex">
+            <div class="form-container">
+                <div class="form">
+                    <label for="name">Ten:</label>
+                    <input type="text" name="name" value="Name...">
+                </div>
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" value="Email...">
+                </div>
+                <div class="form">
+                    <label for="phone">So dien thoai:</label>
+                    <input type="text" name="phone" value="Phone...">
+                </div>
+                <div class="form">
+                    <label for="sex">Gioi tinh:</label>
+                    <div class="sex">
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">Nu</label>
+                        <input type="radio" id="others" name="sex" value="others">
+                        <label for="others">Khac</label>
+                    </div>
+                </div>
+                <div class="form">
+                    <input type="submit" id="submit" value="Dang Ky" style="font-weight: bold;">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

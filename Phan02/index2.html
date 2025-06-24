@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .grid {
+        display: flex;
+        width: 100%;
+        background-color: antiquewhite;
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        gap: 20px;
+        padding: 10px;
+        background-color: aqua;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .grid-container {
+            grid-template-columns: 200px 200px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .grid-container {
+            grid-template-columns: 200px;
+        }
+    }
+</style>
+
+<body>
+    <div class="grid">
+        <div class="grid-container">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+            <img src="https://picsum.photos/200" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
